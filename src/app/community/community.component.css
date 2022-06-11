@@ -1,0 +1,43 @@
+.header{
+    height:60px;
+    background-color:lightblue  ;
+    text-decoration: none;
+    color:white;
+
+}
+div button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    height:60px;
+    background-color:lightblue  ;
+    text-decoration: none;
+    color:white;
+
+}
+div button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.heading{
+    background-color: darkgray;
+    height: 50px;
+}
+.smallpart{
+    padding: 1em;
+    height: auto;
+    transition: 2s;
+    border: 1px  solid grey;
+}
+.smallpart:hover{
+    cursor: pointer;
+    transform: scalex(1.1);
+    box-shadow: 3px 1px  blue;
+}

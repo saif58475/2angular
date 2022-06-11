@@ -1,0 +1,12 @@
+*{
+    color: white    ;
+}
+.my-edit{
+    position: fixed;
+    width: 100%;
+    
+}
+li:hover a{
+    color:brown;
+    border: 0.1px solid brown;
+}

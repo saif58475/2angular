@@ -1,0 +1,10 @@
+ul{
+    list-style: none;
+}
+div ul li a {
+    text-decoration: none;
+    
+}
+.component{
+    border:0.1px solid black;
+}

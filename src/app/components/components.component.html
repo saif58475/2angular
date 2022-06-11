@@ -1,0 +1,216 @@
+<br><br><br>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-2 col-md-12 ">
+            <ul>
+                <li><a routerLink="/introduction">Introduction</a></li><hr>
+                <!-- ================================================================ -->
+                <!-- this is the sidebar dropdown -->
+                <li class="btn-group">
+                  <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Getting Started</a>
+                  <ul class="dropdown-menu p-2">
+                    <li><a routerLink="/whatisangular">What is Angular?</a></li><hr>
+                    <li><a routerLink="/setup">Setup</a></li><hr>
+                  </ul>
+                    </li>
+                    <!-- end of the sidebar drop down  -->
+<!-- ====================================================================== -->
+                <hr>
+                  <!-- this is the sidebar dropdown -->
+                  <li class="btn-group">
+                    <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Understanding Angular</a>
+                    <ul class="dropdown-menu p-2">
+                      <li><a routerLink="/overview">Overview</a></li><hr>
+                      <li><a routerLink="/components">Components</a></li><hr>
+                      <li><a routerLink="/templates">Templates</a></li><hr>
+                      
+                    </ul>
+                      </li>
+                      <!-- end of the sidebar drop down  -->
+                <hr>
+            </ul>
+        </div>
+        <div class="col-lg-10 col-md-12 ">
+           <div class="container ">
+               <div class="p-3">
+                   <h4>Angular Components </h4>
+                   <p>
+                    Components are the main building block for Angular applications. Each component consists of:
+                   </p>
+                   <ul class="disclist">
+                       <li>
+                        An HTML template that declares what renders on the page
+                       </li>
+                       <li>
+                        A TypeScript class that defines behavior
+                       </li>
+                       <li>
+                        A CSS selector that defines how the component is used in a template
+                       </li>
+                       <li>
+                        Optionally, CSS styles applied to the template
+                       </li>
+                   </ul>
+               </div>
+               <div class="p-3">
+                   <h4>Prerequisites</h4>
+                   <p>
+                    To create a component, verify that you have met the following prerequisites:
+                   </p>
+                   <ul>
+                       <li><a href="#">Install the Angular CLI.</a></li>
+                       <li>
+                        <a href="#">Create an Angular workspace</a> with initial application. If you don't have a project, create one using ng new <span class="bg-light">project-name</span>, where <span class="bg-light">project-name</span> is the name of your Angular application.
+                       </li>
+
+                   </ul>
+               </div><hr>
+               <div class="p-3">
+                   <h4>Creating a Component</h4>
+                   <p>
+                    The best way to create a component is with the Angular CLI. You can also create a component manually.
+                   </p>
+                   <h6>Creating a component using the Angular CLI</h6>
+                   <p>To create a component using the Angular CLI:</p>
+                   <ul style="list-style:decimal;">
+                       <li>From a terminal window, navigate to the directory containing your application.</li>
+                       <li>
+                        Run the <span class="bg-light">ng generate component component-name </span> command, where <span class="bg-light">component-name</span> is the name of your new component.
+                       </li>
+                   </ul>
+                   <p>
+                    By default, this command creates the following:
+                   </p>
+                   <ul style="list-style:decimal;">
+                       <li>A folder named after the component</li>
+                       <li>A component file, <span class="bg-light">component-name.component.ts</span></li>
+                       <li>A template file, <span class="bg-light">component-name.component.html</span></li>
+                       <li>A CSS file, <span class="bg-light">component-name.component.css</span></li>
+                       <li>A testing specification file, <span class="bg-light">component-name.component.spec.ts</span></li>
+                   </ul>
+                   <p>
+                    Where <span class="bg-light">component-name</span> is the name of your component.
+                   </p>
+                   <img src="assets/components/components1.PNG" alt="screenshot" class="w-100">
+                   <h4>
+                    Creating a component manually
+                   </h4>
+                   <p>
+                    Although the Angular CLI is the best way to create an Angular component, you can also create a component manually. This section describes how to create the core component file within an existing Angular project.
+                   </p>
+                   <p>
+                    To create a new component manually:
+                   </p>
+                   <ul style="list-style: decimal;">
+                       <li>Navigate to your Angular project directory.</li>
+                       <li>Create a new file, <span class="bg-light">component-name</span>.component.ts.</li>
+                       <li>At the top of the file, add the following import statement.</li>
+                       <img src="assets/components/components2.PNG" alt="screenshot" class="w-100">
+                       <li>After the <span class="bg-light">import</span> statement, add a <span class="bg-light">@Component</span> decorato</li>
+                       <img src="assets/components/components3.PNG" alt="screenshot" class="w-100">
+                       <li>Choose a CSS selector for the component.</li>
+                       <img src="assets/components/components4.PNG" alt="screenshot" class="w-100">
+                       <p>For more information on choosing a selector, see <a href="#">Specifying a component's selector</a>.</p>
+                   <li>
+                    Define the HTML template that the component uses to display information. In most cases, this template is a separate HTML file.
+                   </li>
+                   <img src="assets/components/components5.PNG" alt="screenshot" class="w-100">
+                   <p>
+                    For more information on defining a component's template, see <a href="#">Defining a component's template</a>.
+                   </p>
+                   <li>
+                    Select the styles for the component's template. In most cases, you define the styles for your component's template in a separate file.
+                   </li>
+                   <img src="assets/components/components6.PNG" alt="screenshot" class="w-100">
+                   <li>
+                    Add a class statement that includes the code for the component.
+                </li>
+                <img src="assets/components/components7.PNG" alt="screenshot" class="w-100">
+                    </ul>                    
+               </div><hr><br>
+       <div class="p-3">
+           <h4>Specifying a component's CSS selector</h4>
+           <p>
+            Every component requires a CSS selector. A selector <br>
+             instructs Angular to instantiate this component wherever 
+              it finds the corresponding tag in template HTML. For example, 
+               consider a component <span class="bg-light">hello-world.component.ts</span> that defines its <br>
+                selector as <span class="bg-light">app-hello-world</span>. This selector instructs Angular to 
+                 instantiate this component any time the tag <span class="bg-light">app-hello-world</span> appears
+                      in a template.
+           </p><br><br>
+           <p>
+            Specify a component's <span class="bg-light">selector</span> by adding a selector statement to the <span class="bg-light"><a href="#">@Component</a></span> decorator.
+           </p>
+           <img src="assets/components/components8.PNG" alt="screenshot" class="w-100">
+           <hr>
+           <h4>
+            Defining a component's template
+           </h4>
+           <p>
+            A template is a block of HTML that tells Angular how to render the 
+            component in your application. Define a template for your component
+             in one of two ways: by referencing an external file, or directly within 
+             the component.
+           </p><br>
+           <p>
+            To define a template as an external file, add a <span class="bg-light">templateUrl</span> property to the <span class="bg-light"><a href="#">@Component</a></span> decorator.
+           </p>
+           <img src="assets/components/components9.PNG" alt="screenshot" class="w-100">
+   <p>
+    To define a template within the component, add a <span class="bg-light">template</span> property to the <span class="bg-light"><a href="#">@Component</a></span> decorator that contains the HTML you want to use.
+   </p>
+   <img src="assets/components/components10.PNG" alt="screenshot" class="w-100">
+       </div>
+<p>
+    If you want your template to span multiple lines, use backticks <span class="bg-">(`)</span>. For example:
+</p>
+<img src="assets/components/components11.PNG" alt="screenshot" class="w-100"><br>
+<img src="assets/components/components12.PNG" alt="screenshot" class="w-100">
+
+</div><hr>
+<div class="p-3">
+    <h4>Declaring a component's styles</h4>
+    <p>
+        Declare component styles used for its template in one of two ways: By referencing an external file, or directly within the component.
+    </p><br>
+    <p>
+        To declare the styles for a component in a separate file, add a <span class="bg-light">styleUrls</span> property to the <span class="bg-light"><a href="#">@Component</a></span> decorator.
+    </p><br>
+    <img src="assets/components/components13.PNG" alt="screenshot" class="w-100">
+    <br>
+    <p>
+        To declare the styles within the component, add a <span class="bg-light">styles</span> property to the <span class="bg-light"><a href="#">@Component</a></span> decorator that contains the styles you want to use.
+    </p><br>
+    <img src="assets/components/components14.PNG" alt="screenshot" class="w-100">
+<p>
+    The <span class="bg-light">styles</span> property takes an array of strings that contain the CSS rule declarations
+</p><br><br><br> <hr>
+</div>
+<div class="p-3">
+<h4>Next steps</h4>
+<ul class="disclist">
+    <li>For an architectural overview of components, see<a href="#"> Introduction to components and templates</a></li>
+    <li>For additional options to use when creating a component, see <a href="#">Component</a>  in the API Reference</li>
+    <li>For more information on styling components, see <a href="#">Component styles</a></li>
+    <li>For more information on templates, see <a href="#">Template syntax</a></li>
+</ul>
+</div>
+<div class="text-muted position-relative">
+    <em class="position-absolute bottom-0 end-0">    
+        Last reviewed on Mon Feb 28 2022
+    </em>
+</div>
+    </div>
+</div>
+
+
+<!-- 
+                    <div class="btn-group">
+                        <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Large button
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">link</a></li>
+                        </ul>
+                        </div> -->

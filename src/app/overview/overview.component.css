@@ -1,0 +1,14 @@
+ul{
+    list-style: none;
+}
+div ul li a {
+    text-decoration: none;
+    
+}
+.disclist{
+    list-style: disc;
+}
+.card:hover{
+background-color: bisque;
+cursor: pointer;
+}

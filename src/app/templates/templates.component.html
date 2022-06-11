@@ -1,0 +1,155 @@
+<br><br><br>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-2 col-md-12 ">
+            <ul>
+                <li><a routerLink="/introduction">Introduction</a></li><hr>
+                <!-- ================================================================ -->
+                <!-- this is the sidebar dropdown -->
+                <li class="btn-group">
+                  <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Getting Started</a>
+                  <ul class="dropdown-menu p-2">
+                    <li><a routerLink="/whatisangular">What is Angular?</a></li><hr>
+                    <li><a routerLink="/setup">Setup</a></li><hr>
+                  </ul>
+                    </li>
+                    <!-- end of the sidebar drop down  -->
+<!-- ====================================================================== -->
+                <hr>
+                  <!-- this is the sidebar dropdown -->
+                  <li class="btn-group">
+                    <a class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Understanding Angular</a>
+                    <ul class="dropdown-menu p-2">
+                      <li><a routerLink="/overview">Overview</a></li><hr>
+                      <li><a routerLink="/components">Components</a></li><hr>
+                      <li><a routerLink="/templates">Templates</a></li><hr>
+                    </ul>
+                      </li>
+                      <!-- end of the sidebar drop down  -->
+                <hr>
+            </ul>
+        </div>
+        <div class="col-lg-10 col-md-12 ">
+            <div class="p-3">
+                <h4>Understanding templates</h4>
+                <p>
+                    In Angular, a template is a blueprint for a fragment of a user interface (UI). Templates are written in HTML, and special syntax can be used within a template to build on many of Angular's features.
+                </p><br><hr>
+                <h4>Prerequisites</h4>
+                <p>
+                    Before learning template syntax, you should be familiar with the following:
+                </p>
+                <ul class="disclist">
+                    <li><a routerLink="/introduction">Angular Concepts</a></li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul><br><hr>
+                <h4>Enhancing HTML</h4>
+                <p>
+                    Angular extends the HTML syntax in your templates with additional functionality. <br>
+For example, Angular’s data binding syntax helps to set Document Object Model (DOM) properties dynamically.
+                </p>
+                <p>
+                    Almost all HTML syntax is valid template syntax. However, because an Angular template is only a fragment of <br> 
+                    the UI, it does not include elements such as <span class="bg-light">html</span>, <span class="bg-light">body</span> , or <span class="bg-light">base</span> .
+                </p>
+                <img src="assets/templates/templates1.PNG" alt="screenshot" class="w-100"><br><hr>
+                <h4>More on template syntax     </h4>
+                <p>You might also be interested in the following:</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 m-3 " style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h6 class="card-subtitle mb-2 text-primary">Interpolation</h6>
+                                  <p class="card-text">Learn hot to use interpolation and expressions in HTML</p>
+                                  <a href="#" class="card-link">interpolation</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h6 class="card-subtitle mb-2 text-primary">Property binding</h6>
+                                  <p class="card-text">Set properties of target elements or directives @Input() decorators .</p>
+                                  <a href="#" class="card-link ">property binding</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  
+                                  <h6 class="card-subtitle mb-2 text-primary">Attribute binding </h6>
+                                  <p class="card-text">
+                                      Set the value of attributes . 
+                                  </p>                                
+                                  <a href="#" class="card-link">Attribute binding</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  
+                                  <h6 class="card-subtitle mb-2 text-primary">Class and Style binding</h6>
+                                  <p class="card-text">
+                                      Set the value of class  and style 
+                                  </p>
+                                  
+                                  <a href="#" class="card-link">Class and Style binding</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  
+                                  <h6 class="card-subtitle mb-2 text-primary">Event binding </h6>
+                                  <p class="card-text">
+                                      Listen for events and your HTML
+                                  </p>
+                                 
+                                  <a href="#" class="card-link">Event binding </a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  
+                                  <h6 class="card-subtitle mb-2 text-primary">Template reference variable </h6>
+                                  <p class="card-text">
+                                      Use special variables to reference a DOM element within a template 
+                                  </p>
+                                  <a href="#" class="card-link">Template reference variable </a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  
+                                  <h6 class="card-subtitle mb-2 text-primary">Built-in directive</h6>
+                                  <p class="card-text">
+                                      Listen to and modify the behavior and layout ot HTML
+                                  </p>
+                                  <a href="#" class="card-link" >Built-in directive</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 m-3" style="z-index: -3333;">
+                            <div class="card bg-light text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  
+                                  <h6 class="card-subtitle mb-2 text-primary">Template reference variable </h6>
+                                  <p class="card-text">
+                                      Use special variables to reference a DOM element within a template 
+                                  </p>
+                                  <a href="#" class="card-link">Template reference variable </a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
